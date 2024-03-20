@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tugas Form Validation</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <dotlottie-player id="loading" src="https://lottie.host/a886ddd6-ceab-415f-9ba2-41dbb16fc085/vwAFrPRlb5.json" background="transparent" speed="1" style="width: 300px; height: 300px;" loop autoplay></dotlottie-player>
+      <form id="form" action="menu.html">
+        <h1>Form Registrasi</h1>
+        <div class="input-control">
+          <label for="username">Username</label>
+          <input id="username" name="username" type="text" />
+          <div class="error"></div>
+        </div>
+
+        <div class="input-control">
+          <label for="email">Email</label>
+          <input type="text" name="email" id="email" />
+          <div class="error"></div>
+        </div>
+
+        <div class="input-control">
+          <label for="password">Password</label>
+          <input type="password" name="password" id="password" />
+          <div class="error"></div>
+        </div>
+
+        <div class="input-control">
+          <label for="confirmPassword">Konfirmasi Password</label>
+          <input type="password" name="confirmPassword" id="confirmPassword" />
+          <div class="error"></div>
+        </div>
+
+        <button type="submit">Sign Up</button>
+      </form>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script>
+  </body>
+</html>

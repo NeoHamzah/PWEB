@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+  font-family: 'Poppins', sans-serif;
+  src: url();
+}
+
+body {
+  background-image: url('https://lh3.googleusercontent.com/drive-viewer/AKGpihZJjQy7GfOTFZr2DSdhgSrpvQDdZzUiLqHZx0rMQk8hTg_zAm5GpLC_JDyklMtskJ4TBcbWC0n4ZnHB00dMK9sle_dhrg=s1600');
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+}
+
+.container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#loading {
+  display: none;
+  position: absolute;
+  margin-top: -640px;
+  transition: all 0.5s;
+}
+
+#form {
+  width: 400px;
+  height: fit-content;
+  margin: auto auto auto auto;
+  padding: 20px 30px 20px 30px;
+  background-color: transparent;
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  border-radius: 20px;
+  backdrop-filter: blur(20px);
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+  font-size: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: whitesmoke;
+}
+
+#form h1 {
+  color: whitesmoke;
+  text-align: center;
+}
+
+#form button {
+  padding: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: 100%;
+  font-weight: 700;
+  font-size: 16px;
+  color: #02375c;
+  background-color: whitesmoke;
+  border: none;
+  border-radius: 5px;
+  transition: all 0.2s;
+}
+
+#form button:hover {
+  transform: scale(1.04);
+}
+
+.input-control {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+
+.input-control input {
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  border-radius: 5px;
+  display: block;
+  font-size: 16px;
+  padding: 10px;
+  background-color: transparent;
+  backdrop-filter: blur;
+  color: whitesmoke;
+  transition: all 0.2s;
+}
+
+.input-control input:hover {
+  border: 2px solid whitesmoke;
+}
+
+.input-control input:focus {
+  outline: 0;
+}
+
+.input-control.success input {
+  border: 3px solid #09c372;
+}
+
+.input-control.error input {
+  border: 3px solid #ff3860;
+}
+
+.input-control .error {
+  color: #fd4469;
+  font-size: 13px;
+  font-weight: 500;
+  height: 13px;
+  transition: all 0.3s;
+}
+
+.input-control .error:hover {
+  transform: scale(1.01);
+  color: whitesmoke;
+}
